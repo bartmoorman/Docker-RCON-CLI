@@ -1,6 +1,6 @@
 FROM bmoorman/alpine:3.11
 
-ENV RCON_PORT="25575"
+ENV RCON_PORT=25575
 
 RUN apk add --no-cache \
     curl \

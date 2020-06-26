@@ -8,4 +8,4 @@ RUN apk add --no-cache \
  && fileUrl=$(curl --silent --location "https://api.github.com/repos/itzg/rcon-cli/releases/latest" | jq --raw-output '.assets[] | select(.name | contains("linux_amd64.tar.gz")) | .browser_download_url') \
  && curl --silent --location "${fileUrl}" | tar xz -C /usr/local/bin
 
-ENTRYPOINT ["/usr/local/bin/rcon-cli"]
+ENTRYPOINT ["rcon-cli"]

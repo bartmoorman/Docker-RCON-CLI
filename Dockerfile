@@ -1,4 +1,4 @@
-FROM bmoorman/alpine:3.11
+FROM bmoorman/alpine:3.13
 
 ENV RCON_PORT=25575
 

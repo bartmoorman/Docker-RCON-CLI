@@ -1,4 +1,4 @@
-FROM bmoorman/alpine:3.13
+FROM bmoorman/alpine:3.15
 
 ARG TARGETOS \
     TARGETARCH \
